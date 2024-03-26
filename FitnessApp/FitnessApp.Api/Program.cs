@@ -1,15 +1,30 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using FitnessApp.Contracts.Interfaces.Repositories;
+using FitnessApp.Contracts.Interfaces.Services;
+using FitnessApp.Infrastructure;
+using FitnessApp.Infrastructure.Persistence.Repositories;
+using FitnessApp.Infrastructure.Services;
+using Microsoft.EntityFrameworkCore;
 
-// Add services to the container.
+var builder = WebApplication.CreateBuilder(args);
+
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+//builder.Services.AddTransient<ExceptionMiddleware>;
+builder.Services.AddDbContext<AppDbContext>(options =>
+{
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+//repos
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+//services
+
+builder.Services.AddScoped<IJwtProvider, JwtProvider>();
+builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

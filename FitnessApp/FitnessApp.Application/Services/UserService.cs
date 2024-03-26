@@ -25,7 +25,7 @@ public class UserService:IUserService
 	}
 	public async Task<string> Login(string email, string password)
 	{
-		var user = _userRepository.GetByEmail(email);
+		var user = await _userRepository.GetByEmail(email);
 		var result = _passwordHasher.Verify(password, user.PasswordHashed);
 		if (result == false)
 		{

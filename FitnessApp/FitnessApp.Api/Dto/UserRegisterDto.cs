@@ -12,4 +12,3 @@ namespace FitnessApp.Api.Dto
 		public string Password { get; set; }
 	}
 }
-

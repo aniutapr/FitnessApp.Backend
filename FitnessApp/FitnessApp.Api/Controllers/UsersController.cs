@@ -1,5 +1,4 @@
 ﻿using FitnessApp.Api.Dto;
-using FitnessApp.Application.Services;
 using FitnessApp.Contracts.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -24,9 +23,6 @@ public class UsersController : Controller
     public async Task<IActionResult> Login([FromForm] UserLoginDto userLoginDto)
     {
         var token = await _userService.Login(userLoginDto.Email, userLoginDto.Password);
-        //check input
-        //generate jwt
-        //save jwt in cookies
-        return Ok();
+        return Ok(token);
     }
 }
