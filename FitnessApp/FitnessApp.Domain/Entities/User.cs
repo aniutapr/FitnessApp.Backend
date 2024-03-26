@@ -11,6 +11,7 @@ public class User
         PasswordHashed = hashedPassword;
         Email = email;
     }
+    public User() { }
 
     public Guid Id { get; set; }
     public string Username { get; set; }

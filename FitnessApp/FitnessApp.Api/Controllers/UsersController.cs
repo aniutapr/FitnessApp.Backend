@@ -13,13 +13,13 @@ public class UsersController : Controller
     {
         _userService = userService;
     }
-    [HttpPost]
+    [HttpPost("register")]
     public async Task<IActionResult> Register([FromForm] UserRegisterDto userDto)
     {
         await _userService.Register(userDto.Username, userDto.Email, userDto.Password);
         return Ok();
     }
-    [HttpPost]
+    [HttpPost("login")]
     public async Task<IActionResult> Login([FromForm] UserLoginDto userLoginDto)
     {
         var token = await _userService.Login(userLoginDto.Email, userLoginDto.Password);

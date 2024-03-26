@@ -1,4 +1,5 @@
-﻿using FitnessApp.Contracts.Interfaces.Repositories;
+﻿using FitnessApp.Application.Services;
+using FitnessApp.Contracts.Interfaces.Repositories;
 using FitnessApp.Contracts.Interfaces.Services;
 using FitnessApp.Infrastructure;
 using FitnessApp.Infrastructure.Persistence.Repositories;
@@ -19,6 +20,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 //repos
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 //services
+builder.Services.AddScoped<IUserService, UserService>();
 
 builder.Services.AddScoped<IJwtProvider, JwtProvider>();
 builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
