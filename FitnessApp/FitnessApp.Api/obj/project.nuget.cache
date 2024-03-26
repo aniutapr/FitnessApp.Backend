@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "6A0dDBdMmZN2LQbJn3j/IwjfXbmB7E6XF93dLG2yN0Klw2Qeo0l5A9tuZSWk5Tdov0lX1yaBgwg2gy5cqq7YVA==",
+  "dgSpecHash": "OaSblv0xfH3Nqjm/Nu1G+5Thfwnqnrx+S7qpvgiir4b+fdYS+j5tT8BgXuOzHioKA2th4J4MuczlyDz9KRJZHw==",
   "success": true,
   "projectFilePath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/FitnessApp.Api.csproj",
   "expectedPackageFiles": [
+    "/Users/anaprodan/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
     "/Users/anaprodan/.nuget/packages/microsoft.aspnetcore.openapi/7.0.17/microsoft.aspnetcore.openapi.7.0.17.nupkg.sha512",
     "/Users/anaprodan/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/Users/anaprodan/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",

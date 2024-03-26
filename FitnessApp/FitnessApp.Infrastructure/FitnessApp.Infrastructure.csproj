@@ -22,4 +22,7 @@
     <ProjectReference Include="..\FitnessApp.Contracts\FitnessApp.Contracts.csproj" />
     <ProjectReference Include="..\FitnessApp.Domain\FitnessApp.Domain.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+  </ItemGroup>
 </Project>
