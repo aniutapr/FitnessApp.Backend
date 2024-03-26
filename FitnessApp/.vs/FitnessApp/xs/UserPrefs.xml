@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{3FD3C03D-F28B-4EA7-83EB-00DE7ED161AC}|https">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="FitnessApp.Domain/Class1.cs" />
+      <File FileName="FitnessApp.Infrastructure/Class1.cs" />
+      <File FileName="FitnessApp.Application/Class1.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FitnessApp" expanded="True">
+            <Node name="FitnessApp.Api" expanded="True" />
+            <Node name="FitnessApp.Application" expanded="True" />
+            <Node name="FitnessApp.Domain" expanded="True" />
+            <Node name="FitnessApp.Infrastructure" expanded="True">
+              <Node name="Class1.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.FitnessApp.Application FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.FitnessApp.Infrastructure FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.FitnessApp.Api FirstBuild="True" PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.FitnessApp.Domain FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.FitnessApp.Contracts FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
