@@ -107,6 +107,57 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "FitnessApp.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "FitnessApp.Contracts": "1.0.0",
+          "FitnessApp.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FitnessApp.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FitnessApp.Application.dll": {}
+        }
+      },
+      "FitnessApp.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "FitnessApp.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FitnessApp.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FitnessApp.Contracts.dll": {}
+        }
+      },
+      "FitnessApp.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/FitnessApp.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FitnessApp.Domain.dll": {}
+        }
+      },
+      "FitnessApp.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "FitnessApp.Contracts": "1.0.0",
+          "FitnessApp.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FitnessApp.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FitnessApp.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -460,10 +511,32 @@
         "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "FitnessApp.Application/1.0.0": {
+      "type": "project",
+      "path": "../FitnessApp.Application/FitnessApp.Application.csproj",
+      "msbuildProject": "../FitnessApp.Application/FitnessApp.Application.csproj"
+    },
+    "FitnessApp.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../FitnessApp.Contracts/FitnessApp.Contracts.csproj",
+      "msbuildProject": "../FitnessApp.Contracts/FitnessApp.Contracts.csproj"
+    },
+    "FitnessApp.Domain/1.0.0": {
+      "type": "project",
+      "path": "../FitnessApp.Domain/FitnessApp.Domain.csproj",
+      "msbuildProject": "../FitnessApp.Domain/FitnessApp.Domain.csproj"
+    },
+    "FitnessApp.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../FitnessApp.Infrastructure/FitnessApp.Infrastructure.csproj",
+      "msbuildProject": "../FitnessApp.Infrastructure/FitnessApp.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "FitnessApp.Application >= 1.0.0",
+      "FitnessApp.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.17",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
@@ -474,11 +547,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/anaprodan/Desktop/FitnessApp/FitnessApp.Api/FitnessApp.Api.csproj",
+      "projectUniqueName": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/FitnessApp.Api.csproj",
       "projectName": "FitnessApp.Api",
-      "projectPath": "/Users/anaprodan/Desktop/FitnessApp/FitnessApp.Api/FitnessApp.Api.csproj",
+      "projectPath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/FitnessApp.Api.csproj",
       "packagesPath": "/Users/anaprodan/.nuget/packages/",
-      "outputPath": "/Users/anaprodan/Desktop/FitnessApp/FitnessApp.Api/obj/",
+      "outputPath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/anaprodan/.nuget/NuGet/NuGet.Config"
@@ -494,7 +567,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/FitnessApp.Application.csproj": {
+              "projectPath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/FitnessApp.Application.csproj"
+            },
+            "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Infrastructure/FitnessApp.Infrastructure.csproj": {
+              "projectPath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Infrastructure/FitnessApp.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

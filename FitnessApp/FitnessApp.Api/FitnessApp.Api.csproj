@@ -13,4 +13,28 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Constants\" />
+    <None Remove="Middleware\" />
+    <None Remove="Dto\" />
+    <None Remove="StaticFiles\" />
+    <None Remove="Validators\" />
+    <None Remove="Extensions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Constants\" />
+    <Folder Include="Middleware\" />
+    <Folder Include="Dto\" />
+    <Folder Include="StaticFiles\" />
+    <Folder Include="Validators\" />
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FitnessApp.Application\FitnessApp.Application.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\FitnessApp.Infrastructure\FitnessApp.Infrastructure.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

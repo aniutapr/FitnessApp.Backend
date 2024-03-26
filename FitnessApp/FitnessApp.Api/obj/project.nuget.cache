@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eHzVCC0KLobUPu7wa3DVdVLDFaHFz3GcliT2uNYwlV1fpoh61LabmpHwTzEAytNFekxyqboRv0R9IXWrpIUBJw==",
+  "dgSpecHash": "6A0dDBdMmZN2LQbJn3j/IwjfXbmB7E6XF93dLG2yN0Klw2Qeo0l5A9tuZSWk5Tdov0lX1yaBgwg2gy5cqq7YVA==",
   "success": true,
-  "projectFilePath": "/Users/anaprodan/Desktop/FitnessApp/FitnessApp.Api/FitnessApp.Api.csproj",
+  "projectFilePath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/FitnessApp.Api.csproj",
   "expectedPackageFiles": [
     "/Users/anaprodan/.nuget/packages/microsoft.aspnetcore.openapi/7.0.17/microsoft.aspnetcore.openapi.7.0.17.nupkg.sha512",
     "/Users/anaprodan/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

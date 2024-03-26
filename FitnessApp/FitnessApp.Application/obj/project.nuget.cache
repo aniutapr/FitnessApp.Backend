@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MlXZiKA5udpLtyCF0C2pehHxckf1PHGi8/Kph4Ut/mTIVA9LtYdJeSaDYFQianhN5PpFREtNvB0lnExM2eCdKg==",
+  "dgSpecHash": "iQfPv5lN+I2cFJwdijbntqOIH+7Rifv4UloGo5vvTDQ6E2aKXrdLuje4l3jYJJP6B/1ndonhxfJ4rEBnFqBXXw==",
   "success": true,
-  "projectFilePath": "/Users/anaprodan/Desktop/FitnessApp/FitnessApp.Application/FitnessApp.Application.csproj",
+  "projectFilePath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/FitnessApp.Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

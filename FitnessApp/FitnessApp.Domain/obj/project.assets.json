@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/anaprodan/Desktop/FitnessApp/FitnessApp.Domain/FitnessApp.Domain.csproj",
+      "projectUniqueName": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/FitnessApp.Domain.csproj",
       "projectName": "FitnessApp.Domain",
-      "projectPath": "/Users/anaprodan/Desktop/FitnessApp/FitnessApp.Domain/FitnessApp.Domain.csproj",
+      "projectPath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/FitnessApp.Domain.csproj",
       "packagesPath": "/Users/anaprodan/.nuget/packages/",
-      "outputPath": "/Users/anaprodan/Desktop/FitnessApp/FitnessApp.Domain/obj/",
+      "outputPath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/anaprodan/.nuget/NuGet/NuGet.Config"

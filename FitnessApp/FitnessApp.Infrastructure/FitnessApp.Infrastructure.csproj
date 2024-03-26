@@ -6,4 +6,20 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Persistence\" />
+    <None Remove="Services\" />
+    <None Remove="Persistence\EntityConfigurations\" />
+    <None Remove="Persistence\Repositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Persistence\" />
+    <Folder Include="Services\" />
+    <Folder Include="Persistence\EntityConfigurations\" />
+    <Folder Include="Persistence\Repositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FitnessApp.Contracts\FitnessApp.Contracts.csproj" />
+    <ProjectReference Include="..\FitnessApp.Domain\FitnessApp.Domain.csproj" />
+  </ItemGroup>
 </Project>
