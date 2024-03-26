@@ -1,20 +1,18 @@
 ﻿using FitnessApp.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace FitnessApp.Infrastructure
+namespace FitnessApp.Infrastructure;
+
+public class AppDbContext : DbContext
 {
-    public class AppDbContext : DbContext
+    public AppDbContext(DbContextOptions<AppDbContext> options)
+        : base(options)
     {
-        public DbSet<User> Users { get; set; }
+        Database.EnsureCreated();
+    }
+    public DbSet<User> Users { get; set; }
 
-        public AppDbContext(DbContextOptions<AppDbContext> options)
-            : base(options)
-        {
-            Database.EnsureCreated();
-        }
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-        }
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
     }
 }

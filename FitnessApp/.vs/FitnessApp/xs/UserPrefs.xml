@@ -1,23 +1,28 @@
 ﻿<Properties StartupConfiguration="{3FD3C03D-F28B-4EA7-83EB-00DE7ED161AC}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.FitnessApp.Api PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FitnessApp.Infrastructure/Services/JwtProvider.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="FitnessApp.Infrastructure/AppDbContext.cs">
     <Files>
-      <File FileName="FitnessApp.Domain/Entities/User.cs" Line="18" Column="33" IsPinned="True" />
-      <File FileName="FitnessApp.Infrastructure/Services/PasswordHasher.cs" Line="4" Column="46" IsPinned="True" />
-      <File FileName="FitnessApp.Api/Controllers/UsersController.cs" Line="30" Column="21" />
-      <File FileName="FitnessApp.Application/Services/UserSerbice.cs" Line="29" Column="55" />
-      <File FileName="FitnessApp.Contracts/Interfaces/Repositories/IUserRepository.cs" Line="9" Column="19" />
-      <File FileName="FitnessApp.Api/Dto/UserLoginDto.cs" Line="11" Column="6" />
-      <File FileName="FitnessApp.Infrastructure/Persistence/Repositories/UserRepository.cs" Line="22" Column="31" />
-      <File FileName="FitnessApp.Infrastructure/Services/JwtProvider.cs" Line="4" Column="9" />
+      <File FileName="FitnessApp.Contracts/Interfaces/Repositories/IUserRepository.cs" />
+      <File FileName="FitnessApp.Infrastructure/Persistence/Repositories/UserRepository.cs" />
+      <File FileName="FitnessApp.Application/Services/UserService.cs" />
+      <File FileName="FitnessApp.Api/Controllers/UsersController.cs" Line="18" Column="6" />
+      <File FileName="FitnessApp.Api/Dto/UserLoginDto.cs" />
+      <File FileName="FitnessApp.Api/Dto/UserRegisterDto.cs" />
+      <File FileName="FitnessApp.Api/Program.cs" Line="9" Column="35" />
+      <File FileName="FitnessApp.Infrastructure/AppDbContext.cs" Line="11" Column="1" />
+      <File FileName="FitnessApp.Domain/Entities/User.cs" />
+      <File FileName="FitnessApp.Api/appsettings.json" Line="10" Column="37" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="FitnessApp" selected="True">
-            <Node name="FitnessApp.Api" expanded="True">
+          <Node name="FitnessApp" expanded="True">
+            <Node name="FitnessApp.Api">
               <Node name="Controllers" expanded="True" />
               <Node name="Dto" expanded="True" />
             </Node>
@@ -34,17 +39,12 @@
               <Node name="Entities" expanded="True" />
             </Node>
             <Node name="FitnessApp.Infrastructure">
-              <Node name="Persistence" expanded="True">
-                <Node name="Repositories" expanded="True" />
-              </Node>
+              <Node name="AppDbContext.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
 </Properties>

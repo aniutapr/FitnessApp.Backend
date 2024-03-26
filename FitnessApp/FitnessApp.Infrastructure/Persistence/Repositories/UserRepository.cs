@@ -15,7 +15,8 @@ namespace FitnessApp.Infrastructure.Persistence.Repositories
 
         public async Task AddUser(User user)
         {
-            throw new NotImplementedException();
+            _context.Add(user);
+            await _context.SaveChangesAsync();
         }
 
         public async Task<User> GetByEmail(string email)
@@ -25,4 +26,3 @@ namespace FitnessApp.Infrastructure.Persistence.Repositories
         }
     }
 }
-
