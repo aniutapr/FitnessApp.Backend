@@ -11,9 +11,15 @@ namespace FitnessApp.Infrastructure.Persistence.Repositories
 		{
 		}
 
-        public void AddUser(User user)
+        public async Task AddUser(User user)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task<User> GetByEmail(string email)
+        {
+            var userEntity = await _context.Users.AsNoTracking().FirstOrDefaultAsync(u => u.Email == email) ?? throw new Exception();
+            return userEntity;
         }
     }
 }

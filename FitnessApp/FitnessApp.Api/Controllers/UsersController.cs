@@ -21,8 +21,12 @@ public class UsersController : Controller
         return Ok();
     }
     [HttpPost]
-    public async Task<IActionResult> Login()
+    public async Task<IActionResult> Login([FromForm] UserLoginDto userLoginDto)
     {
-
+        var token = await _userService.Login(userLoginDto.Email, userLoginDto.Password);
+        //check input
+        //generate jwt
+        //save jwt in cookies
+        return Ok();
     }
 }

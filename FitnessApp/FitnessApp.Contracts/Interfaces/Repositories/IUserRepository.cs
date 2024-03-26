@@ -5,7 +5,8 @@ namespace FitnessApp.Contracts.Interfaces.Repositories
 {
 	public interface IUserRepository
 	{
-		void AddUser(User user);
-	}
+		Task AddUser(User user);
+        Task<User> GetByEmail(string email);
+    }
 }
 
