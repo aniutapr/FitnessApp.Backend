@@ -8,13 +8,11 @@
 
   <ItemGroup>
     <None Remove="Interfaces\" />
-    <None Remove="Interfaces\DbContext\" />
     <None Remove="Interfaces\Repositories\" />
     <None Remove="Interfaces\Services\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Interfaces\" />
-    <Folder Include="Interfaces\DbContext\" />
     <Folder Include="Interfaces\Repositories\" />
     <Folder Include="Interfaces\Services\" />
   </ItemGroup>

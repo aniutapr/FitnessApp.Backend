@@ -8,10 +8,13 @@ public class UserService:IUserService
 {
 	private readonly IPasswordHasher _passwordHasher;
     private IUserRepository _userRepository;
+    private IJwtProvider _jwtProvider;
 
-    public UserService(IPasswordHasher hasher)
+    public UserService(IPasswordHasher hasher, IUserRepository repository, IJwtProvider jwtProvider)
 	{
 		_passwordHasher = hasher;
+		_userRepository = repository;
+		_jwtProvider = jwtProvider;
 	}
 	public async Task Register(string username, string email, string password)
 	{
@@ -28,6 +31,7 @@ public class UserService:IUserService
 		{
 			throw new Exception("Incorrect email or password");
 		}
+		var token = _jwtProvider.GenerateToken(user);
 		return "";
 	}
 }

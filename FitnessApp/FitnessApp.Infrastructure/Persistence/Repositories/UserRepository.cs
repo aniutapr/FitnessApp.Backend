@@ -18,7 +18,7 @@ namespace FitnessApp.Infrastructure.Persistence.Repositories
 
         public async Task<User> GetByEmail(string email)
         {
-            var userEntity = await _context.Users.AsNoTracking().FirstOrDefaultAsync(u => u.Email == email) ?? throw new Exception();
+            var userEntity = await _context.Users.AsNoTracking().FirstOrDefaultAsync(u => u.Email == email);
             return userEntity;
         }
     }
