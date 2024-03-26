@@ -1,6 +1,7 @@
 ﻿using FitnessApp.Application.Services;
 using FitnessApp.Contracts.Interfaces.Repositories;
 using FitnessApp.Contracts.Interfaces.Services;
+using FitnessApp.Domain.Entities;
 using FitnessApp.Infrastructure;
 using FitnessApp.Infrastructure.Persistence.Repositories;
 using FitnessApp.Infrastructure.Services;
@@ -8,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
+builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection(nameof(JwtOptions)));
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

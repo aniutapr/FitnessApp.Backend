@@ -20,9 +20,10 @@ public class UsersController : Controller
         return Ok();
     }
     [HttpPost("login")]
-    public async Task<IActionResult> Login([FromForm] UserLoginDto userLoginDto)
+    public async Task<ActionResult<string>> Login([FromForm] UserLoginDto userLoginDto)
     {
         var token = await _userService.Login(userLoginDto.Email, userLoginDto.Password);
         return Ok(token);
     }
+
 }

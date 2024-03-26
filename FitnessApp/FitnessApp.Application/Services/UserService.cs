@@ -32,7 +32,7 @@ public class UserService:IUserService
 			throw new Exception("Incorrect email or password");
 		}
 		var token = _jwtProvider.GenerateToken(user);
-		return "";
+		return token;
 	}
 }
 //pattern
