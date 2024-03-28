@@ -33,7 +33,6 @@
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/obj/Debug/net7.0/staticwebassets.build.json
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/obj/Debug/net7.0/staticwebassets.development.json
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/obj/Debug/net7.0/scopedcss/bundle/FitnessApp.Api.styles.css
-/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/obj/Debug/net7.0/FitnessApp.Api.csproj.CopyComplete
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/obj/Debug/net7.0/FitnessApp.Api.dll
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/obj/Debug/net7.0/refint/FitnessApp.Api.dll
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/obj/Debug/net7.0/FitnessApp.Api.pdb
@@ -53,3 +52,5 @@
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/bin/Debug/net7.0/Npgsql.dll
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/bin/Debug/net7.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/obj/Debug/net7.0/FitnessApp.Api.sourcelink.json
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/obj/Debug/net7.0/FitnessA.72BD21B7.Up2Date

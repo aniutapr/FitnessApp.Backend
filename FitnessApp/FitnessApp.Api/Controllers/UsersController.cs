@@ -8,10 +8,12 @@ namespace FitnessApp.Api.Controllers;
 public class UsersController : Controller
 {
     private readonly IUserService _userService;
-
-    public UsersController(IUserService userService)
+    private readonly IHttpContextAccessor _httpContextAccessor;
+    
+    public UsersController(IUserService userService, IHttpContextAccessor httpContext)
     {
         _userService = userService;
+        _httpContextAccessor = httpContext;
     }
     [HttpPost("register")]
     public async Task<IActionResult> Register([FromForm] UserRegisterDto userDto)
@@ -23,7 +25,7 @@ public class UsersController : Controller
     public async Task<ActionResult<string>> Login([FromForm] UserLoginDto userLoginDto)
     {
         var token = await _userService.Login(userLoginDto.Email, userLoginDto.Password);
+        _httpContextAccessor.HttpContext.Response.Cookies.Append("Jwt token(absolutely secret)", token);
         return Ok(token);
     }
-
 }

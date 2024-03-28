@@ -5,26 +5,30 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="FitnessApp.Infrastructure/AppDbContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FitnessApp.Api/Extensions/AuthenticationExtension.cs">
     <Files>
-      <File FileName="FitnessApp.Contracts/Interfaces/Repositories/IUserRepository.cs" />
-      <File FileName="FitnessApp.Infrastructure/Persistence/Repositories/UserRepository.cs" />
-      <File FileName="FitnessApp.Application/Services/UserService.cs" />
-      <File FileName="FitnessApp.Api/Controllers/UsersController.cs" Line="18" Column="6" />
+      <File FileName="FitnessApp.Contracts/Interfaces/Repositories/IUserRepository.cs" Line="1" Column="1" />
+      <File FileName="FitnessApp.Infrastructure/Persistence/Repositories/UserRepository.cs" Line="26" Column="1" />
+      <File FileName="FitnessApp.Application/Services/UserService.cs" Line="35" Column="15" />
+      <File FileName="FitnessApp.Api/Controllers/UsersController.cs" Line="28" Column="95" />
       <File FileName="FitnessApp.Api/Dto/UserLoginDto.cs" />
       <File FileName="FitnessApp.Api/Dto/UserRegisterDto.cs" />
-      <File FileName="FitnessApp.Api/Program.cs" Line="9" Column="35" />
+      <File FileName="FitnessApp.Api/Program.cs" Line="12" Column="43" />
       <File FileName="FitnessApp.Infrastructure/AppDbContext.cs" Line="11" Column="1" />
       <File FileName="FitnessApp.Domain/Entities/User.cs" />
-      <File FileName="FitnessApp.Api/appsettings.json" Line="10" Column="37" />
+      <File FileName="FitnessApp.Api/appsettings.json" Line="17" Column="1" />
+      <File FileName="FitnessApp.Infrastructure/Services/PasswordHasher.cs" Line="13" Column="1" />
+      <File FileName="FitnessApp.Infrastructure/Services/JwtProvider.cs" Line="33" Column="1" />
+      <File FileName="FitnessApp.Api/Extensions/AuthenticationExtension.cs" Line="31" Column="94" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="FitnessApp" expanded="True">
+          <Node name="FitnessApp">
             <Node name="FitnessApp.Api">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Dto" expanded="True" />
+              <Node name="Extensions" expanded="True">
+                <Node name="AuthenticationExtension.cs" selected="True" />
+              </Node>
             </Node>
             <Node name="FitnessApp.Application" expanded="True">
               <Node name="Services" expanded="True" />
@@ -38,8 +42,11 @@
             <Node name="FitnessApp.Domain" expanded="True">
               <Node name="Entities" expanded="True" />
             </Node>
-            <Node name="FitnessApp.Infrastructure">
-              <Node name="AppDbContext.cs" selected="True" />
+            <Node name="FitnessApp.Infrastructure" expanded="True">
+              <Node name="Persistence" expanded="True">
+                <Node name="Repositories" expanded="True" />
+              </Node>
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>

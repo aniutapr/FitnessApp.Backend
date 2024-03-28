@@ -27,7 +27,6 @@
     <Folder Include="Dto\" />
     <Folder Include="StaticFiles\" />
     <Folder Include="Validators\" />
-    <Folder Include="Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FitnessApp.Application\FitnessApp.Application.csproj">
@@ -36,5 +35,8 @@
     <ProjectReference Include="..\FitnessApp.Infrastructure\FitnessApp.Infrastructure.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Extensions\AuthorizationExtension.cs" />
   </ItemGroup>
 </Project>

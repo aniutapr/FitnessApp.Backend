@@ -9,3 +9,5 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FitnessApp.Infrastructure
 build_property.ProjectDir = /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Infrastructure/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -1,7 +1,6 @@
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/bin/Debug/net7.0/FitnessApp.Domain.deps.json
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/bin/Debug/net7.0/FitnessApp.Domain.dll
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/bin/Debug/net7.0/FitnessApp.Domain.pdb
-/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/obj/Debug/net7.0/FitnessApp.Domain.csproj.AssemblyReference.cache
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/obj/Debug/net7.0/FitnessApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/obj/Debug/net7.0/FitnessApp.Domain.AssemblyInfoInputs.cache
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/obj/Debug/net7.0/FitnessApp.Domain.AssemblyInfo.cs
@@ -10,3 +9,4 @@
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/obj/Debug/net7.0/refint/FitnessApp.Domain.dll
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/obj/Debug/net7.0/FitnessApp.Domain.pdb
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/obj/Debug/net7.0/ref/FitnessApp.Domain.dll
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/obj/Debug/net7.0/FitnessApp.Domain.sourcelink.json
