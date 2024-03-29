@@ -37,7 +37,7 @@ public static class AuthenticationExtension
         {
             options.AddPolicy("UserPolicy", policy =>
             {
-                policy.Requirements
+                policy.RequireAuthenticatedUser();
             });
             options.AddPolicy("AdminPolicy", policy =>
             {

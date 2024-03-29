@@ -19,7 +19,16 @@ public class JwtProvider : IJwtProvider
     }
     public string GenerateToken(User user)
     {
-        var claims = new[] { new Claim("userId", user.Id.ToString()), new Claim("role", user.Role.ToString()) };
+        var claims = new List<Claim>
+    {
+        new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+    };
+
+        foreach (var role in user.Roles)
+        {
+            claims.Add(new Claim(ClaimTypes.Role, role.Name)); 
+        }
+
         var credentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_options.SecretKey)),
             SecurityAlgorithms.HmacSha256);
 
@@ -27,6 +36,7 @@ public class JwtProvider : IJwtProvider
             claims: claims,
             signingCredentials: credentials,
             expires: DateTime.UtcNow.AddHours(_options.ExpiresHours));
+
         var tokenValue = new JwtSecurityTokenHandler().WriteToken(token);
 
         return tokenValue;

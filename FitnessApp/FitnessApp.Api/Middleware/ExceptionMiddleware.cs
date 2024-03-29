@@ -28,13 +28,33 @@ public class ExceptionMiddleware
 
     private async Task HandleExceptionAsync(HttpContext httpContext, Exception ex)
     {
-		httpContext.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-		httpContext.Response.ContentType = "application.json";
-		await httpContext.Response.WriteAsync(
-			new ErrorDetails
-			{
-				StatusCode = httpContext.Response.StatusCode,
-				Message = "InternalServerErrorFromCustomExMiddleware"
-			}.ToString());
+        var statusCode = HttpStatusCode.InternalServerError;
+        var message = "Internal Server Error";
+
+        if (ex is UnauthorizedAccessException)
+        {
+            statusCode = HttpStatusCode.Forbidden;
+            message = "Unauthorized access exception";
+        }
+        else if (ex is FileNotFoundException)
+        {
+            statusCode = HttpStatusCode.NotFound;
+            message = "File not found exception";
+        }
+        else if (ex is ArgumentException)
+        {
+            statusCode = HttpStatusCode.BadRequest;
+            message = "Bad request exception";
+        }
+
+        httpContext.Response.StatusCode = (int)statusCode;
+        httpContext.Response.ContentType = "application/json";
+
+        await httpContext.Response.WriteAsync(
+            new ErrorDetails
+            {
+                StatusCode = httpContext.Response.StatusCode,
+                Message = message
+            }.ToString());
     }
 }

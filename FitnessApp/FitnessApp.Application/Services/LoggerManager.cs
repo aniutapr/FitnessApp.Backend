@@ -1,5 +1,4 @@
-﻿using System;
-using FitnessApp.Contracts.Interfaces.Services;
+﻿using FitnessApp.Contracts.Interfaces.Services;
 using Microsoft.Extensions.Logging;
 
 namespace FitnessApp.Application.Services;
