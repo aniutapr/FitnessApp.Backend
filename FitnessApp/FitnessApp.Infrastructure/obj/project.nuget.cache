@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "i1FbgfLA2KKXJuJ1zMwvDSDsrwfVFAZGtOY7ZbIP66w6MN0kwSwW5yR6SdIS4nEM0hQYX2Z8PPZWCM9eygQDNA==",
+  "dgSpecHash": "tf8ZshuLozt4JMVmO5dZel8Ez9fzy8KwF5iXFEmEU4a2iqysU1EdBZV8zlLrF33sy8FMvJqVHipxjy0BzDXH0w==",
   "success": true,
   "projectFilePath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Infrastructure/FitnessApp.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "/Users/anaprodan/.nuget/packages/microsoft.identitymodel.tokens/6.35.0/microsoft.identitymodel.tokens.6.35.0.nupkg.sha512",
     "/Users/anaprodan/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/Users/anaprodan/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "/Users/anaprodan/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
     "/Users/anaprodan/.nuget/packages/npgsql/7.0.6/npgsql.7.0.6.nupkg.sha512",
     "/Users/anaprodan/.nuget/packages/npgsql.entityframeworkcore.postgresql/7.0.11/npgsql.entityframeworkcore.postgresql.7.0.11.nupkg.sha512",
     "/Users/anaprodan/.nuget/packages/system.identitymodel.tokens.jwt/6.35.0/system.identitymodel.tokens.jwt.6.35.0.nupkg.sha512",

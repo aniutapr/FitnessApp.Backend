@@ -19,7 +19,7 @@ public class JwtProvider : IJwtProvider
     }
     public string GenerateToken(User user)
     {
-        var claims = new[] { new Claim("userId", user.Id.ToString()) };
+        var claims = new[] { new Claim("userId", user.Id.ToString()), new Claim("role", user.Role.ToString()) };
         var credentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_options.SecretKey)),
             SecurityAlgorithms.HmacSha256);
 

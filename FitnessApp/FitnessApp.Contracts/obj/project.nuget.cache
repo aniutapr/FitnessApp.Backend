@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "UrnGvn3qBETVk7f6iWm9bBJGOg+t5LOXb9Ufp4F4j//4nGHwOaAqAYhpTeavVHKesge8VSXJAsXXBkOZ7KIgFg==",
+  "dgSpecHash": "Ga0U9rWC3SyCN/nY8rJHU7ZREu+DJYKraZZ1apdqAbpQtVdLVd7VF5N+nsgic0APVpcC/RHbLvU/UHs4GbVM7Q==",
   "success": true,
   "projectFilePath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/FitnessApp.Contracts.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/anaprodan/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,4 +1,5 @@
 ﻿using FitnessApp.Domain.Entities;
+using FitnessApp.Infrastructure.Persistence.EntityConfigurations;
 using Microsoft.EntityFrameworkCore;
 
 namespace FitnessApp.Infrastructure;
@@ -14,5 +15,8 @@ public class AppDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.ApplyConfiguration(new UserConfiguration());
+
     }
+
 }

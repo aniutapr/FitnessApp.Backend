@@ -1,4 +1,5 @@
-﻿using FitnessApp.Application.Services;
+﻿using FitnessApp.Api.Extensions;
+using FitnessApp.Application.Services;
 using FitnessApp.Contracts.Interfaces.Repositories;
 using FitnessApp.Contracts.Interfaces.Services;
 using FitnessApp.Domain.Entities;
@@ -31,6 +32,7 @@ var jwtOptions = builder.Configuration.GetSection(nameof(JwtOptions)).Get<JwtOpt
 builder.Services.AddCustomAuthentication(jwtOptions);
 
 var app = builder.Build();
+app.ConfigureCustomExceptionMiddleware();
 
 if (app.Environment.IsDevelopment())
 {

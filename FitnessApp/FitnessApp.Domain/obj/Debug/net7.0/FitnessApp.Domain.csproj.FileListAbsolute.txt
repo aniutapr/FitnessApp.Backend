@@ -9,4 +9,4 @@
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/obj/Debug/net7.0/refint/FitnessApp.Domain.dll
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/obj/Debug/net7.0/FitnessApp.Domain.pdb
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/obj/Debug/net7.0/ref/FitnessApp.Domain.dll
-/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/obj/Debug/net7.0/FitnessApp.Domain.sourcelink.json
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/obj/Debug/net7.0/FitnessApp.Domain.csproj.AssemblyReference.cache

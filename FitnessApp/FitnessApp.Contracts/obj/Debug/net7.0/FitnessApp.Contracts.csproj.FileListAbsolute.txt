@@ -12,5 +12,4 @@
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/obj/Debug/net7.0/refint/FitnessApp.Contracts.dll
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/obj/Debug/net7.0/FitnessApp.Contracts.pdb
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/obj/Debug/net7.0/ref/FitnessApp.Contracts.dll
-/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/obj/Debug/net7.0/FitnessApp.Contracts.sourcelink.json
-/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/obj/Debug/net7.0/FitnessA.7506891D.Up2Date
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/obj/Debug/net7.0/FitnessApp.Contracts.csproj.CopyComplete

@@ -35,9 +35,13 @@ public static class AuthenticationExtension
             });
         services.AddAuthorization(options =>
         {
+            options.AddPolicy("UserPolicy", policy =>
+            {
+                policy.Requirements
+            });
             options.AddPolicy("AdminPolicy", policy =>
             {
-                policy.RequireClaim("Admin", "true");
+                policy.RequireClaim("role", "Admin");
             });
         });
     }
