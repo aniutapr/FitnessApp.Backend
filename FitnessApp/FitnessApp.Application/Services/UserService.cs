@@ -22,7 +22,7 @@ namespace FitnessApp.Application.Services
         public async Task Register(string username, string email, string password, Role role)
         {
             var hashedPassword = _passwordHasher.Generate(password);
-            var user = User.Create(Guid.NewGuid(), username, hashedPassword, email, new List<Role> { role });
+            var user = User.Create(Guid.NewGuid(), username, hashedPassword, email,  role );
             await _userRepository.AddUser(user);
         }
 

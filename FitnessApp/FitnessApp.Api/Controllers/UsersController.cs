@@ -1,6 +1,5 @@
 ﻿using FitnessApp.Api.Dto;
 using FitnessApp.Contracts.Interfaces.Services;
-using FitnessApp.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FitnessApp.Api.Controllers;
@@ -18,6 +17,7 @@ public class UsersController : Controller
         _roleService = roleService;
         _httpContextAccessor = httpContextAccessor;
     }
+
     [HttpPost("register")]
     public async Task<IActionResult> Register([FromForm] UserRegisterDto userDto)
     {
@@ -30,6 +30,7 @@ public class UsersController : Controller
         await _userService.Register(userDto.Username, userDto.Email, userDto.Password, role);
         return Ok();
     }
+
     [HttpPost("register/admin")]
     public async Task<IActionResult> RegisterAnAdmin([FromForm] UserRegisterDto userDto)
     {
@@ -42,6 +43,7 @@ public class UsersController : Controller
         await _userService.Register(userDto.Username, userDto.Email, userDto.Password, role);
         return Ok();
     }
+
     [HttpPost("login")]
     public async Task<ActionResult<string>> Login([FromForm] UserLoginDto userLoginDto)
     {

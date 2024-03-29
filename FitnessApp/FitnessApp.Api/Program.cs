@@ -8,13 +8,13 @@ using FitnessApp.Infrastructure.Persistence.Repositories;
 using FitnessApp.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
+builder.Logging.AddConsole(); // Configure logging to write to the console
 
 builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection(nameof(JwtOptions)));
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-//builder.Services.AddTransient<ExceptionMiddleware>;
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
@@ -23,6 +23,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 //services
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IRoleService, RoleService>();
 
 builder.Services.AddScoped<IJwtProvider, JwtProvider>();
 builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
@@ -32,6 +33,7 @@ var jwtOptions = builder.Configuration.GetSection(nameof(JwtOptions)).Get<JwtOpt
 builder.Services.AddCustomAuthentication(jwtOptions);
 
 var app = builder.Build();
+
 app.ConfigureCustomExceptionMiddleware();
 
 if (app.Environment.IsDevelopment())

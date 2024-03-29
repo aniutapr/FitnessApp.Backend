@@ -6,14 +6,15 @@ namespace FitnessApp.Api.Middleware;
 
 public class ExceptionMiddleware
 {
-	private readonly RequestDelegate _next;
-	private readonly ILoggerManager _logger;
-	public ExceptionMiddleware(RequestDelegate next, ILoggerManager logger)
-	{
-		_next = next;
-		_logger = logger;
-	}
-	public async Task InvokeAsync(HttpContext httpContext)
+    private readonly RequestDelegate _next;
+    private readonly ILogger<ExceptionMiddleware> _logger;
+
+    public ExceptionMiddleware(RequestDelegate next, ILogger<ExceptionMiddleware> logger)
+    {
+        _next = next;
+        _logger = logger;
+    }
+    public async Task InvokeAsync(HttpContext httpContext)
 	{
 		try
 		{
@@ -31,21 +32,23 @@ public class ExceptionMiddleware
         var statusCode = HttpStatusCode.InternalServerError;
         var message = "Internal Server Error";
 
-        if (ex is UnauthorizedAccessException)
+        switch (ex)
         {
-            statusCode = HttpStatusCode.Forbidden;
-            message = "Unauthorized access exception";
+            case UnauthorizedAccessException _:
+                statusCode = HttpStatusCode.Forbidden;
+                message = "Unauthorized access exception";
+                break;
+            case FileNotFoundException _:
+                statusCode = HttpStatusCode.NotFound;
+                message = "File not found exception";
+                break;
+            case ArgumentException _:
+                statusCode = HttpStatusCode.BadRequest;
+                message = "Bad request exception";
+                break;
         }
-        else if (ex is FileNotFoundException)
-        {
-            statusCode = HttpStatusCode.NotFound;
-            message = "File not found exception";
-        }
-        else if (ex is ArgumentException)
-        {
-            statusCode = HttpStatusCode.BadRequest;
-            message = "Bad request exception";
-        }
+
+        _logger.LogError($"Exception: {ex.Message}\nStackTrace: {ex.StackTrace}");
 
         httpContext.Response.StatusCode = (int)statusCode;
         httpContext.Response.ContentType = "application/json";
@@ -57,4 +60,5 @@ public class ExceptionMiddleware
                 Message = message
             }.ToString());
     }
+
 }

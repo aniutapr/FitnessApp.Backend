@@ -12,11 +12,10 @@ public class AppDbContext : DbContext
         Database.EnsureCreated();
     }
     public DbSet<User> Users { get; set; }
+    public DbSet<Role> Roles { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfiguration(new UserConfiguration());
-
     }
-
 }
