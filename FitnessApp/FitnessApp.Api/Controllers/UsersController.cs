@@ -31,19 +31,6 @@ public class UsersController : Controller
         return Ok();
     }
 
-    [HttpPost("register/admin")]
-    public async Task<IActionResult> RegisterAnAdmin([FromForm] UserRegisterDto userDto)
-    {
-        var role = await _roleService.GetRoleByName("Admin");
-
-        if (role == null)
-        {
-            return BadRequest("Role not found");
-        }
-        await _userService.Register(userDto.Username, userDto.Email, userDto.Password, role);
-        return Ok();
-    }
-
     [HttpPost("login")]
     public async Task<ActionResult<string>> Login([FromForm] UserLoginDto userLoginDto)
     {

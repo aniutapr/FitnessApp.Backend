@@ -11,12 +11,14 @@
     <None Remove="Services\" />
     <None Remove="Persistence\EntityConfigurations\" />
     <None Remove="Persistence\Repositories\" />
+    <None Remove="Services\Authentication\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Persistence\" />
     <Folder Include="Services\" />
     <Folder Include="Persistence\EntityConfigurations\" />
     <Folder Include="Persistence\Repositories\" />
+    <Folder Include="Services\Authentication\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FitnessApp.Contracts\FitnessApp.Contracts.csproj" />

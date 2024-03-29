@@ -1,5 +1,4 @@
 ﻿using System.Net;
-using FitnessApp.Contracts.Interfaces.Services;
 using FitnessApp.Domain.CustomExceptions;
 
 namespace FitnessApp.Api.Middleware;

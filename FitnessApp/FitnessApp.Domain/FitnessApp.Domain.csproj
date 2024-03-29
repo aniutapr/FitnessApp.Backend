@@ -11,12 +11,14 @@
     <None Remove="Enums\" />
     <None Remove="Entities\" />
     <None Remove="CustomExceptions\" />
+    <None Remove="Entities\Authentication\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Constants\" />
     <Folder Include="Enums\" />
     <Folder Include="Entities\" />
     <Folder Include="CustomExceptions\" />
+    <Folder Include="Entities\Authentication\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />

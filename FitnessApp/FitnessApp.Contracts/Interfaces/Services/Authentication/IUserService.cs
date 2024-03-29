@@ -1,6 +1,4 @@
-﻿using System.Threading.Tasks;
-using FitnessApp.Contracts.Interfaces.Repositories;
-using FitnessApp.Domain.Entities;
+﻿using FitnessApp.Domain.Entities;
 
 namespace FitnessApp.Contracts.Interfaces.Services
 {

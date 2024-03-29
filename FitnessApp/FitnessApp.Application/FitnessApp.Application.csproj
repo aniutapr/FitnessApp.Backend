@@ -12,6 +12,7 @@
     <None Remove="Models\" />
     <None Remove="Services\" />
     <None Remove="Extensions\" />
+    <None Remove="Services\Authentication\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Commands\" />
@@ -19,6 +20,7 @@
     <Folder Include="Models\" />
     <Folder Include="Services\" />
     <Folder Include="Extensions\" />
+    <Folder Include="Services\Authentication\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FitnessApp.Contracts\FitnessApp.Contracts.csproj" />
