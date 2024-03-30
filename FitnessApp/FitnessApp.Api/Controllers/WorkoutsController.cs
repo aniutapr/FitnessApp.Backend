@@ -1,13 +1,12 @@
 ﻿using FitnessApp.Contracts.Interfaces.Repositories;
 using FitnessApp.Domain.Entities;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-
 
 namespace FitnessApp.Api.Controllers;
 
 [Route("api/[controller]")]
-public class WorkoutsController : Controller
+[ApiController]
+public class WorkoutsController : ControllerBase
 {
     private readonly IWorkoutRepository _repository;
 
@@ -16,38 +15,47 @@ public class WorkoutsController : Controller
         _repository = repository;
     }
 
-    [Authorize]
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Workout>>> Get()
+    public async Task<ActionResult<IEnumerable<Workout>>> GetAllWorkouts()
     {
         var workouts = await _repository.GetAllWorkoutsAsync();
-        if (workouts == null || !workouts.Any())
-        {
-            return NotFound(); 
-        }
         return Ok(workouts); 
     }
 
     [HttpGet("{id}")]
-    public string Get(int id)
+    public async Task<ActionResult<Workout>> GetWorkoutById(Guid id)
     {
-        return "value";
+        var workout = await _repository.GetWorkoutByIdAsync(id);
+        if (workout == null)
+        {
+            return NotFound(); 
+        }
+        return Ok(workout); 
     }
 
     [HttpPost]
-    public void Post([FromBody]string value)
+    public async Task<ActionResult<Workout>> CreateWorkout(Workout workout)
     {
+        var createdWorkout = await _repository.AddWorkoutAsync(workout);
+        return CreatedAtAction(nameof(GetWorkoutById), new { id = createdWorkout.WorkoutId }, createdWorkout); // HTTP 201 Created
     }
 
-    // PUT api/values/5
     [HttpPut("{id}")]
-    public void Put(int id, [FromBody]string value)
+    public async Task<IActionResult> UpdateWorkout(Guid id, Workout workout)
     {
+        if (id != workout.WorkoutId)
+        {
+            return BadRequest(); 
+        }
+
+        await _repository.UpdateWorkoutAsync(workout);
+        return NoContent(); 
     }
 
-    // DELETE api/values/5
     [HttpDelete("{id}")]
-    public void Delete(int id)
+    public async Task<IActionResult> DeleteWorkout(Guid id)
     {
+        await _repository.DeleteWorkoutAsync(id);
+        return NoContent(); 
     }
 }
