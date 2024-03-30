@@ -1,6 +1,4 @@
-﻿
-using System;
-namespace FitnessApp.Domain.Entities;
+﻿namespace FitnessApp.Domain.Entities;
 
 public class WorkoutGoal
 {

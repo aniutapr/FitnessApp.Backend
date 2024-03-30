@@ -11,5 +11,6 @@ namespace FitnessApp.Domain.Entities
 		public int Weight { get; set; }
 		public int Repeats { get; set; }
         public int Sets { get; set; }
+		public Workout Workout { get; set; }
     }
 }

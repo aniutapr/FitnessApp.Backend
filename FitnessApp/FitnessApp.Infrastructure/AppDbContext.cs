@@ -13,9 +13,15 @@ public class AppDbContext : DbContext
     }
     public DbSet<User> Users { get; set; }
     public DbSet<Role> Roles { get; set; }
+    public DbSet<Workout> Workouts { get; set; }
+    public DbSet<UserProfile> UserProfiles { get; set; }
+    public DbSet<LogExcersise> LogExcersises { get; set; }
+    public DbSet<Excersise> Excersises { get; set; }
+    public DbSet<WorkoutGoal> WorkoutGoals { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfiguration(new UserConfiguration());
+        modelBuilder.ApplyConfiguration(new WorkoutConfiguration());
     }
 }
