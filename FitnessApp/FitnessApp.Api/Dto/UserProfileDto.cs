@@ -1,6 +1,5 @@
-﻿namespace FitnessApp.Api.Controllers
+﻿namespace FitnessApp.Api.Controllers;
+
+public class UserProfileDto
 {
-    public class UserProfileDto
-    {
-    }
 }

@@ -8,7 +8,7 @@ using FitnessApp.Infrastructure.Persistence.Repositories;
 using FitnessApp.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
-builder.Logging.AddConsole(); // Configure logging to write to the console
+builder.Logging.AddConsole();
 
 builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection(nameof(JwtOptions)));
 builder.Services.AddHttpContextAccessor();

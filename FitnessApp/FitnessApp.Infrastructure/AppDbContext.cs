@@ -23,5 +23,8 @@ public class AppDbContext : DbContext
     {
         modelBuilder.ApplyConfiguration(new UserConfiguration());
         modelBuilder.ApplyConfiguration(new WorkoutConfiguration());
+        modelBuilder.ApplyConfiguration(new WorkoutGoalConfiguration());
+        modelBuilder.ApplyConfiguration(new ExcersiseConfiguration());
+        modelBuilder.ApplyConfiguration(new ExcersiseLogConfiguration());
     }
 }
