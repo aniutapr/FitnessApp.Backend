@@ -54,3 +54,6 @@
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/bin/Debug/net7.0/Newtonsoft.Json.dll
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/obj/Debug/net7.0/FitnessApp.Api.csproj.CopyComplete
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/bin/Debug/net7.0/MediatR.dll
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/bin/Debug/net7.0/MediatR.Contracts.dll
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll

@@ -8,3 +8,4 @@ namespace FitnessApp.Contracts.Interfaces.Repositories
         Task<User> GetByEmail(string email);
     }
 }
+//+

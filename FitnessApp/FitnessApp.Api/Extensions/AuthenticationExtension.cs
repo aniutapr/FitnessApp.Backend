@@ -28,7 +28,7 @@ public static class AuthenticationExtension
                 {
                     OnMessageReceived = context =>
                     {
-                        context.Token = context.Request.Cookies["Jwt token(absolutely secret)"];
+                        context.Token = context.Request.Cookies["JwtToken"];
                         return Task.CompletedTask;
                     }
                 };
@@ -38,10 +38,6 @@ public static class AuthenticationExtension
             options.AddPolicy("UserPolicy", policy =>
             {
                 policy.RequireAuthenticatedUser();
-            });
-            options.AddPolicy("AdminPolicy", policy =>
-            {
-                policy.RequireClaim("role", "Admin");
             });
         });
     }

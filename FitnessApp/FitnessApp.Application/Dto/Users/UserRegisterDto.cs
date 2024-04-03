@@ -1,4 +1,4 @@
-﻿namespace FitnessApp.Api.Dto;
+﻿namespace FitnessApp.Application;
 
 public class UserRegisterDto
 {

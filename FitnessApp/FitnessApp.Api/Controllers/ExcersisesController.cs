@@ -1,46 +1,69 @@
-﻿using FitnessApp.Contracts.Interfaces.Repositories;
+﻿using FitnessApp.Application;
+using FitnessApp.Application.Commands;
+using FitnessApp.Application.Commands.Excersises;
+using FitnessApp.Application.Excersises.Queries;
+using FitnessApp.Application.Queries.Excersises;
 using FitnessApp.Domain.Entities;
+using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FitnessApp.Api.Controllers;
-
 [Route("api/[controller]")]
-public class ExcersisesController : Controller
+[ApiController]
+public class ExcersisesController : ControllerBase
 {
-    private readonly IExcersiseRepository _excersiseRepository;
-    public ExcersisesController(IExcersiseRepository excersiseRepository)
+    private readonly IMediator _mediator;
+
+    public ExcersisesController(IMediator mediator)
     {
-        _excersiseRepository = excersiseRepository;
+        _mediator = mediator;
     }
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Excersise>>> GetAllExcersises()
+    public async Task<ActionResult<IEnumerable<ExcersiseDto>>> GetAllExcersises()
     {
-        var excersises = await _excersiseRepository.GetAllExcersisesAsync();
+        var excersises = await _mediator.Send(new GetAllExcersisesQuery());
         return Ok(excersises);
     }
 
-    // GET api/values/5
     [HttpGet("{id}")]
-    public string Get(int id)
+    public async Task<ActionResult<ExcersiseDto>> GetExcersiseById(Guid id)
     {
-        return "value";
+        var excersise = await _mediator.Send(new GetExcersiseByIdQuery { Id = id });
+
+        if (excersise is null)
+            return NotFound();
+
+        return Ok(excersise);
     }
 
-    // POST api/values
     [HttpPost]
-    public void Post([FromBody]string value)
+    public async Task<ActionResult<ExcersiseDto>> CreateExcersise([FromForm] ExcersiseDto excersiseDto)
     {
+        var command = new CreateExcersiseCommand { ExcersiseDto = excersiseDto };
+        var createdExcersise = await _mediator.Send(command);
+        return CreatedAtAction(nameof(GetExcersiseById), new { id = createdExcersise.Id }, createdExcersise);
     }
 
-    // PUT api/values/5
-    [HttpPut("{id}")]
-    public void Put(int id, [FromBody]string value)
+    [HttpPut()]
+    public async Task<IActionResult> UpdateExcersise([FromForm] Excersise excersise)
     {
+        var command = new UpdateExcersiseCommand
+        {
+            Excersise = excersise
+        };
+
+        await _mediator.Send(command);
+
+        return NoContent();
     }
 
-    // DELETE api/values/5
     [HttpDelete("{id}")]
-    public void Delete(int id)
+    public async Task<IActionResult> DeleteExcersise(Guid id)
     {
+        var command = new DeleteExcersiseCommand { Id = id };
+        await _mediator.Send(command);
+
+        return NoContent();
     }
 }

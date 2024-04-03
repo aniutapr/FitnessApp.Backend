@@ -22,9 +22,7 @@ public class JwtProvider : IJwtProvider
     {
         var claims = new List<Claim>
     {
-        new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-        new Claim(ClaimTypes.Role, user.Role.Name)
-    };
+        new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())    };
 
         var credentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_options.SecretKey)),
             SecurityAlgorithms.HmacSha256);

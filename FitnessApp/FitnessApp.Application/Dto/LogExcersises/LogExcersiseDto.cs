@@ -1,9 +1,8 @@
-﻿namespace FitnessApp.Api.Dto;
+﻿namespace FitnessApp.Application;
 
 public class LogExcersiseDto
 {
     public Guid ExcersiseId { get; set; }
-    public Guid WorkoutId { get; set; }
     public int DurationInMin { get; set; }
     public int Weight { get; set; }
     public int Repeats { get; set; }

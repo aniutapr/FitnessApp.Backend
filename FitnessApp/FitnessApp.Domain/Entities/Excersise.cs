@@ -1,8 +1,10 @@
-﻿using FitnessApp.Domain.Enums;
+﻿using System.ComponentModel.DataAnnotations;
+using FitnessApp.Domain.Enums;
 namespace FitnessApp.Domain.Entities;
 public class Excersise
 {
-	public int Id { get; set; }
+    [Key]
+    public Guid Id { get; set; }
 	public string Name { get; set; }
 	public string Description { get; set; }
 	public Category Category { get; set; }

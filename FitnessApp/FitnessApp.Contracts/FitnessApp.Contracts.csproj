@@ -21,4 +21,8 @@
   <ItemGroup>
     <ProjectReference Include="..\FitnessApp.Domain\FitnessApp.Domain.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.IO" Version="4.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+  </ItemGroup>
 </Project>

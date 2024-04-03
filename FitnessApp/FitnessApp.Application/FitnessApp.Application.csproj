@@ -13,6 +13,14 @@
     <None Remove="Services\" />
     <None Remove="Extensions\" />
     <None Remove="Services\Authentication\" />
+    <None Remove="Queries\Excersises\" />
+    <None Remove="Dto\" />
+    <None Remove="Mappings\" />
+    <None Remove="Commands\Excersises\" />
+    <None Remove="Commands\Workouts\" />
+    <None Remove="Queries\Workouts\" />
+    <None Remove="Commands\LogExcersise\" />
+    <None Remove="Queries\LogExcersise\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Commands\" />
@@ -21,6 +29,14 @@
     <Folder Include="Services\" />
     <Folder Include="Extensions\" />
     <Folder Include="Services\Authentication\" />
+    <Folder Include="Queries\Excersises\" />
+    <Folder Include="Dto\" />
+    <Folder Include="Mappings\" />
+    <Folder Include="Commands\Excersises\" />
+    <Folder Include="Commands\Workouts\" />
+    <Folder Include="Queries\Workouts\" />
+    <Folder Include="Commands\LogExcersise\" />
+    <Folder Include="Queries\LogExcersise\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FitnessApp.Contracts\FitnessApp.Contracts.csproj" />
@@ -29,5 +45,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
   </ItemGroup>
 </Project>

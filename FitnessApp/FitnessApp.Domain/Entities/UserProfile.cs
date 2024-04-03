@@ -1,11 +1,10 @@
 ﻿using System;
-namespace FitnessApp.Domain.Entities
-{
-	public class UserProfile
-	{
-		public UserProfile()
-		{
-		}
-	}
-}
+using System.ComponentModel.DataAnnotations;
 
+namespace FitnessApp.Domain.Entities;
+
+public class UserProfile
+{
+	[Key]
+	public Guid UserId { get; set; }
+}

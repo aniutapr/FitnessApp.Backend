@@ -11,24 +11,21 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.17" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="Constants\" />
     <None Remove="Middleware\" />
-    <None Remove="Dto\" />
     <None Remove="StaticFiles\" />
     <None Remove="Validators\" />
     <None Remove="Extensions\" />
-    <None Remove="Mappings\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Constants\" />
     <Folder Include="Middleware\" />
-    <Folder Include="Dto\" />
     <Folder Include="StaticFiles\" />
     <Folder Include="Validators\" />
-    <Folder Include="Mappings\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FitnessApp.Application\FitnessApp.Application.csproj">

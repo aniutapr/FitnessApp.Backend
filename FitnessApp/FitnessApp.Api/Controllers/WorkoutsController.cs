@@ -1,5 +1,8 @@
-﻿using FitnessApp.Contracts.Interfaces.Repositories;
+﻿using FitnessApp.Application;
+using FitnessApp.Application.Commands.Workouts;
+using FitnessApp.Application.Queries.Workouts;
 using FitnessApp.Domain.Entities;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FitnessApp.Api.Controllers;
@@ -8,54 +11,55 @@ namespace FitnessApp.Api.Controllers;
 [ApiController]
 public class WorkoutsController : ControllerBase
 {
-    private readonly IWorkoutRepository _repository;
+    private readonly IMediator _mediator;
 
-    public WorkoutsController(IWorkoutRepository repository)
+    public WorkoutsController(IMediator mediator)
     {
-        _repository = repository;
+        _mediator = mediator;
     }
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Workout>>> GetAllWorkouts()
+    public async Task<ActionResult<IEnumerable<WorkoutDto>>> GetAllWorkoutsByUserId()
     {
-        var workouts = await _repository.GetAllWorkoutsAsync();
-        return Ok(workouts); 
+        var id = new Guid();
+        var query = new GetAllWorkoutsByUserIdQuery { UserId=id};
+        var workouts = _mediator.Send(query);
+        return Ok(workouts);
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult<Workout>> GetWorkoutById(Guid id)
+    public async Task<ActionResult<WorkoutDto>> GetWorkoutById(Guid id)
     {
-        var workout = await _repository.GetWorkoutByIdAsync(id);
-        if (workout == null)
+        var query = new GetWorkoutByIdQuery { WorkoutId = id };
+        var workout = _mediator.Send(query);
+        if(workout is null)
         {
-            return NotFound(); 
+            return NotFound();
         }
-        return Ok(workout); 
+        return Ok(workout);
     }
 
     [HttpPost]
-    public async Task<ActionResult<Workout>> CreateWorkout(Workout workout)
+    public async Task<ActionResult<WorkoutDto>> CreateWorkout([FromForm]WorkoutDto workout)
     {
-        var createdWorkout = await _repository.AddWorkoutAsync(workout);
-        return CreatedAtAction(nameof(GetWorkoutById), new { id = createdWorkout.WorkoutId }, createdWorkout); // HTTP 201 Created
+        var command = new CreateWorkoutCommand { Workout = workout };
+        var createdWorkout=await _mediator.Send(command);
+        return CreatedAtAction(nameof(GetWorkoutById), new { id = createdWorkout.WorkoutId }, createdWorkout);
     }
-
-    [HttpPut("{id}")]
-    public async Task<IActionResult> UpdateWorkout(Guid id, Workout workout)
+    [HttpPut()]
+    public async Task<IActionResult> UpdateWorkout([FromForm]Workout workout)
     {
-        if (id != workout.WorkoutId)
-        {
-            return BadRequest(); 
-        }
-
-        await _repository.UpdateWorkoutAsync(workout);
-        return NoContent(); 
+        var command = new UpdateWorkoutCommand { Workout = workout };
+        await _mediator.Send(command);
+        return NoContent();
+        
     }
 
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteWorkout(Guid id)
     {
-        await _repository.DeleteWorkoutAsync(id);
-        return NoContent(); 
+        var command = new DeleteWorkoutCommand { WorkoutId = id };
+        await _mediator.Send(command);
+        return NoContent();
     }
 }

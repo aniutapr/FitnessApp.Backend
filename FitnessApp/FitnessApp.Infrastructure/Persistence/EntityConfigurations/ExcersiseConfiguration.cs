@@ -7,13 +7,9 @@ namespace FitnessApp.Infrastructure.Persistence.EntityConfigurations
 {
 	public class ExcersiseConfiguration : IEntityTypeConfiguration<Excersise>
     {
-		public ExcersiseConfiguration()
-		{
-		}
-
         public void Configure(EntityTypeBuilder<Excersise> builder)
         {
-            throw new NotImplementedException();
+            builder.HasKey(e => e.Id);
         }
     }
 }

@@ -9,7 +9,7 @@ namespace FitnessApp.Infrastructure.Persistence.EntityConfigurations
         public void Configure(EntityTypeBuilder<Workout> builder)
         {
             builder.ToTable("Workouts");
-            builder.HasMany(w => w.Excersises).WithOne(w=>w.Workout).OnDelete(DeleteBehavior.Cascade);
+            //builder.HasMany(w => w.Excersises).WithOne(w=>w.Workout).OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

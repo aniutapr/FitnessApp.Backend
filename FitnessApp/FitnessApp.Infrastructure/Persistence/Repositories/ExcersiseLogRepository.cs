@@ -1,41 +1,49 @@
-﻿using System;
-using FitnessApp.Contracts.Interfaces.Repositories;
+﻿using FitnessApp.Contracts.Interfaces.Repositories;
 using FitnessApp.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
-namespace FitnessApp.Infrastructure.Persistence.Repositories;
-
-public class ExcersiseLogRepository:IExcersiseLogRepository
+namespace FitnessApp.Infrastructure.Persistence.Repositories
 {
-    private readonly AppDbContext _context;
-	public ExcersiseLogRepository(AppDbContext dbContext)
-	{
-        _context = dbContext;
-	}
-
-    public async Task DeleteLogAsync(Guid id)
+    public class ExcersiseLogRepository : IExcersiseLogRepository
     {
-        var log = await _context.LogExcersises.FindAsync(id);
-        _context.LogExcersises.Remove(log);
-    }
+        private readonly AppDbContext _context;
 
-    public Task<IEnumerable<LogExcersise>> GetAllLogsByWorkoutIdAsync()
-    {
-        throw new NotImplementedException();
-    }
+        public ExcersiseLogRepository(AppDbContext context)
+        {
+            _context = context;
+        }
 
-    public Task<LogExcersise> GetLogByLogIdAsync(Guid id)
-    {
-        throw new NotImplementedException();
-    }
+        public async Task DeleteLogAsync(Guid id)
+        {
+            var log = await _context.LogExcersises.FindAsync(id);
+            if (log != null)
+            {
+                _context.LogExcersises.Remove(log);
+                await _context.SaveChangesAsync();
+            }
+        }
 
-    public Task LogExcersiseAsync(LogExcersise logExcersise)
-    {
-        throw new NotImplementedException();
-    }
+        public async Task<IEnumerable<LogExcersise>> GetAllLogsByWorkoutIdAsync(Guid workoutId)
+        {
+            return await _context.LogExcersises.Where(log => log.WorkoutId == workoutId).ToListAsync();
+        }
 
-    public Task UpdateLogAsync(LogExcersise logExcersise)
-    {
-        throw new NotImplementedException();
+        public async Task<LogExcersise> GetLogByLogIdAsync(Guid id)
+        {
+            return await _context.LogExcersises.FindAsync(id);
+        }
+
+        public async Task UpdateLogAsync(LogExcersise logExcersise)
+        {
+            _context.Entry(logExcersise).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task<LogExcersise> LogExcersiseAsync(LogExcersise logExcersise)
+        {
+            _context.LogExcersises.Add(logExcersise);
+            await _context.SaveChangesAsync();
+            return logExcersise;
+        }
     }
 }
-

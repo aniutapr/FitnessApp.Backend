@@ -19,10 +19,10 @@ namespace FitnessApp.Application.Services
             _jwtProvider = jwtProvider ?? throw new ArgumentNullException(nameof(jwtProvider));
         }
 
-        public async Task Register(string username, string email, string password, Role role)
+        public async Task Register(string username, string email, string password)
         {
             var hashedPassword = _passwordHasher.Generate(password);
-            var user = User.Create(Guid.NewGuid(), username, hashedPassword, email,  role );
+            var user = User.Create(Guid.NewGuid(), username, hashedPassword, email );
             await _userRepository.AddUser(user);
         }
 

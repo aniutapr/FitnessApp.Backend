@@ -12,7 +12,6 @@ public class AppDbContext : DbContext
         Database.EnsureCreated();
     }
     public DbSet<User> Users { get; set; }
-    public DbSet<Role> Roles { get; set; }
     public DbSet<Workout> Workouts { get; set; }
     public DbSet<UserProfile> UserProfiles { get; set; }
     public DbSet<LogExcersise> LogExcersises { get; set; }
@@ -21,10 +20,11 @@ public class AppDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.ApplyConfiguration(new UserConfiguration());
-        modelBuilder.ApplyConfiguration(new WorkoutConfiguration());
-        modelBuilder.ApplyConfiguration(new WorkoutGoalConfiguration());
+        //modelBuilder.ApplyConfiguration(new UserConfiguration());
+        //modelBuilder.ApplyConfiguration(new WorkoutConfiguration());
+        //modelBuilder.ApplyConfiguration(new WorkoutGoalConfiguration());
         modelBuilder.ApplyConfiguration(new ExcersiseConfiguration());
-        modelBuilder.ApplyConfiguration(new ExcersiseLogConfiguration());
+        modelBuilder.ApplyConfiguration(new LogExcersiseConfiguration());
+
     }
 }

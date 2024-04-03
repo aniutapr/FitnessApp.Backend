@@ -1,5 +1,5 @@
 ﻿using System;
-namespace FitnessApp.Api.Dto
+namespace FitnessApp.Application
 {
 	public class UserLoginDto
 	{
