@@ -76,8 +76,19 @@ builder.Services.AddMediatR(cfg => { cfg.RegisterServicesFromAssembly(typeof(Cre
 var jwtOptions = builder.Configuration.GetSection(nameof(JwtOptions)).Get<JwtOptions>();
 builder.Services.AddCustomAuthentication(jwtOptions);
 
-var app = builder.Build();
+// Добавляем сервис CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder =>
+        {
+            builder.AllowAnyOrigin()
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+        });
+});
 
+var app = builder.Build();
 app.ConfigureCustomExceptionMiddleware();
 
 if (app.Environment.IsDevelopment())
@@ -88,8 +99,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+// Добавляем использование CORS после UseAuthorization и до MapControllers
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseCors("AllowAll");
 
 app.MapControllers();
 

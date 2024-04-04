@@ -1,39 +1,55 @@
 ﻿<Properties StartupConfiguration="{3FD3C03D-F28B-4EA7-83EB-00DE7ED161AC}|https">
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.FitnessApp.Api PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FitnessApp.Api/Dto/LogExcersiseDto.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FitnessApp.Domain/Entities/Authentication/JwtOptions.cs">
     <Files>
-      <File FileName="FitnessApp.Api/Controllers/ProfileController.cs" />
-      <File FileName="FitnessApp.Api/Controllers/ExcersisesController.cs" />
       <File FileName="FitnessApp.Api/Controllers/ExcersiseLogsController.cs" />
-      <File FileName="FitnessApp.Api/Controllers/StatisticsController.cs" />
-      <File FileName="FitnessApp.Api/Controllers/UsersController.cs" />
-      <File FileName="FitnessApp.Api/Controllers/WorkoutGoalsController.cs" />
-      <File FileName="FitnessApp.Api/Dto/LogExcersiseDto.cs" Line="11" Column="2" />
+      <File FileName="FitnessApp.Application/Queries/LogExcersise/GetAllLogExercisesByWorkoutIdQuery.cs" />
+      <File FileName="FitnessApp.Application/Queries/LogExcersise/GetAllLogExercisesByWorkoutIdQueryHandler.cs" />
+      <File FileName="FitnessApp.Application/Queries/LogExcersise/GetLogExerciseByIdQuery.cs" />
+      <File FileName="FitnessApp.Application/Queries/LogExcersise/GetLogExerciseByIdQueryHandler.cs" />
+      <File FileName="FitnessApp.Application/Commands/LogExcersise/LogExerciseCommand.cs" />
+      <File FileName="FitnessApp.Application/Commands/LogExcersise/LogExerciseCommandHandler.cs" />
+      <File FileName="FitnessApp.Application/Commands/LogExcersise/UpdateLogExerciseCommand.cs" />
+      <File FileName="FitnessApp.Application/Commands/LogExcersise/UpdateLogExerciseCommandHandler.cs" />
+      <File FileName="FitnessApp.Application/Commands/LogExcersise/DeleteLogExerciseCommand.cs" />
+      <File FileName="FitnessApp.Application/Commands/LogExcersise/DeleteLogExerciseCommandHandler.cs" />
+      <File FileName="FitnessApp.Domain/Entities/LogExcersise.cs" />
+      <File FileName="FitnessApp.Api/Controllers/ExcersisesController.cs" />
+      <File FileName="FitnessApp.Application/Commands/Excersises/CreateExcersiseCommandHandler.cs" />
+      <File FileName="FitnessApp.Application/Mappings/LogExcersiseMapper.cs" />
+      <File FileName="FitnessApp.Application/Mappings/UserMapper.cs" />
+      <File FileName="FitnessApp.Contracts/Interfaces/Repositories/IWorkoutRepository.cs" />
+      <File FileName="FitnessApp.Contracts/Interfaces/Repositories/IExcersiseLogRepository.cs" />
+      <File FileName="FitnessApp.Infrastructure/Persistence/Repositories/ExcersiseLogRepository.cs" />
+      <File FileName="FitnessApp.Infrastructure/Persistence/Repositories/ExcersiseRepository.cs" />
       <File FileName="FitnessApp.Infrastructure/Persistence/Repositories/ProfileRepository.cs" />
       <File FileName="FitnessApp.Infrastructure/Persistence/Repositories/UserRepository.cs" />
       <File FileName="FitnessApp.Infrastructure/Persistence/Repositories/WorkoutRepository.cs" />
-      <File FileName="FitnessApp.Infrastructure/Persistence/EntityConfigurations/ExcersiseConfiguration.cs" />
-      <File FileName="FitnessApp.Infrastructure/Persistence/EntityConfigurations/ExcersiseLogConfiguration.cs" />
-      <File FileName="FitnessApp.Infrastructure/Persistence/EntityConfigurations/WorkoutGoalConfiguration.cs" />
-      <File FileName="FitnessApp.Infrastructure/Persistence/EntityConfigurations/WorkoutConfiguration.cs" />
-      <File FileName="FitnessApp.Infrastructure/Persistence/EntityConfigurations/UserConfiguration.cs" />
-      <File FileName="FitnessApp.Infrastructure/AppDbContext.cs" />
-      <File FileName="FitnessApp.Infrastructure/Persistence/Repositories/ExcersiseLogRepository.cs" />
-      <File FileName="FitnessApp.Infrastructure/Persistence/Repositories/ExcersiseRepository.cs" />
-      <File FileName="FitnessApp.Contracts/Interfaces/Repositories/IExcersiseLogRepository.cs" />
-      <File FileName="FitnessApp.Domain/Entities/LogExcersise.cs" />
-      <File FileName="FitnessApp.Api/Mappings/LogExcersiseMapper.cs" />
-      <File FileName="FitnessApp.Domain/Entities/UserProfile.cs" />
-      <File FileName="FitnessApp.Domain/Entities/Workout.cs" />
-      <File FileName="FitnessApp.Domain/Entities/Excersise.cs" Line="13" Column="2" />
-      <File FileName="FitnessApp.Api/Middleware/ExceptionMiddleware.cs" />
-      <File FileName="FitnessApp.Application/Commands/AddWorkoutCommand.cs" />
-      <File FileName="FitnessApp.Application/Commands/AddWorkoutCommandHandler.cs" Line="24" Column="2" />
+      <File FileName="FitnessApp.Application/Mappings/WorkoutMapper.cs" />
       <File FileName="FitnessApp.Api/Controllers/WorkoutsController.cs" />
+      <File FileName="FitnessApp.Application/Commands/Workouts/CreateWorkoutCommand.cs" />
+      <File FileName="FitnessApp.Application/Commands/Workouts/CreateWorkoutCommandHandler.cs" />
+      <File FileName="FitnessApp.Api/Controllers/UsersController.cs" />
+      <File FileName="FitnessApp.Contracts/Interfaces/Services/Authentication/IUserService.cs" />
+      <File FileName="FitnessApp.Domain/Entities/UserProfile.cs" />
+      <File FileName="FitnessApp.Domain/Entities/Authentication/User.cs" />
+      <File FileName="FitnessApp.Application/Services/Authentication/UserService.cs" />
+      <File FileName="FitnessApp.Infrastructure/AppDbContext.cs" />
       <File FileName="FitnessApp.Api/appsettings.json" />
+      <File FileName="FitnessApp.Infrastructure/Services/Authentication/JwtProvider.cs" />
+      <File FileName="FitnessApp.Infrastructure/Persistence/EntityConfigurations/UserConfiguration.cs" />
       <File FileName="FitnessApp.Api/Program.cs" />
+      <File FileName="FitnessApp.Contracts/Interfaces/Services/Authentication/IJwtProvider.cs" />
+      <File FileName="FitnessApp.Domain/Entities/Authentication/JwtOptions.cs" Line="8" Column="2" />
+      <File FileName="FitnessApp.Api/Extensions/AuthenticationExtension.cs" />
+      <File FileName="FitnessApp.Infrastructure/Services/Authentication/PasswordHasher.cs" />
+      <File FileName="FitnessApp.Contracts/Interfaces/Services/Authentication/IPasswordHasher.cs" />
+      <File FileName="FitnessApp.Domain/Entities/Excersise.cs" Line="15" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -42,19 +58,54 @@
             <Node name="FitnessApp.Api" expanded="True">
               <Node name="Controllers" expanded="True" />
             </Node>
-            <Node name="FitnessApp.Application">
-              <Node name="Commands" expanded="True" />
+            <Node name="FitnessApp.Application" expanded="True">
+              <Node name="Commands" expanded="True">
+                <Node name="Excersises" expanded="True" />
+                <Node name="LogExcersise" expanded="True" />
+                <Node name="Workouts" expanded="True" />
+              </Node>
+              <Node name="Dto" expanded="True">
+                <Node name="Workouts" expanded="True" />
+              </Node>
+              <Node name="Mappings" expanded="True" />
+              <Node name="Queries" expanded="True">
+                <Node name="Excersises" expanded="True" />
+                <Node name="LogExcersise" expanded="True" />
+                <Node name="Workouts" expanded="True" />
+              </Node>
+              <Node name="Services" expanded="True">
+                <Node name="Authentication" expanded="True" />
+              </Node>
             </Node>
-            <Node name="FitnessApp.Domain" expanded="True">
-              <Node name="Entities" expanded="True" />
+            <Node name="FitnessApp.Contracts" expanded="True">
+              <Node name="Interfaces" expanded="True">
+                <Node name="Repositories" expanded="True" />
+                <Node name="Services" expanded="True">
+                  <Node name="Authentication" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="FitnessApp.Domain">
+              <Node name="Entities" expanded="True">
+                <Node name="Authentication" expanded="True">
+                  <Node name="JwtOptions.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Enums" expanded="True" />
+            </Node>
+            <Node name="FitnessApp.Infrastructure" expanded="True">
+              <Node name="Persistence" expanded="True">
+                <Node name="EntityConfigurations" expanded="True" />
+                <Node name="Repositories" expanded="True" />
+              </Node>
+              <Node name="Services" expanded="True">
+                <Node name="Authentication" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.FitnessApp.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
