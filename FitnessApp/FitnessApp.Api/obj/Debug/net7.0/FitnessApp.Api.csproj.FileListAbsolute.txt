@@ -57,3 +57,4 @@
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/bin/Debug/net7.0/MediatR.dll
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/bin/Debug/net7.0/MediatR.Contracts.dll
 /Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/bin/Debug/net7.0/FluentValidation.dll

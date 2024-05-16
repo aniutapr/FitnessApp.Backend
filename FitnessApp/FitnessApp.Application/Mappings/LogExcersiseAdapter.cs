@@ -3,7 +3,7 @@ using FitnessApp.Domain.Entities;
 
 namespace FitnessApp.Application
 {
-    public static class LogExcersiseMapper
+    public static class LogExcersiseAdapter
     {
         public static LogExcersise ToEntity(LogExcersiseDto logExcersiseDto, Guid workoutId)
         {

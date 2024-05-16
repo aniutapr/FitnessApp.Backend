@@ -13,7 +13,7 @@ namespace FitnessApp.Application.Commands.LogExcersise
 
         public async Task<Domain.Entities.LogExcersise> Handle(LogExerciseCommand request, CancellationToken cancellationToken)
         {
-            var logExcersiseEntity = LogExcersiseMapper.ToEntity(request.LogExersiseDto, request.WorkoutId);
+            var logExcersiseEntity = LogExcersiseAdapter.ToEntity(request.LogExersiseDto, request.WorkoutId);
             return await _excersiseLogRepository.LogExcersiseAsync(logExcersiseEntity);
         }
     }

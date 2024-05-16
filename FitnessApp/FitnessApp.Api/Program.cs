@@ -6,6 +6,7 @@ using FitnessApp.Contracts.Interfaces.Services;
 using FitnessApp.Domain.Entities;
 using FitnessApp.Infrastructure;
 using FitnessApp.Infrastructure.Persistence.Repositories;
+using FitnessApp.Infrastructure.Repositories;
 using FitnessApp.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -61,6 +62,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IExcersiseRepository, ExcersiseRepository>();
 builder.Services.AddScoped<IWorkoutRepository, WorkoutRepository>();
+builder.Services.AddScoped<ILoggingWorkoutRepository, LoggingWorkoutRepository>();
+
 builder.Services.AddScoped<IExcersiseLogRepository, ExcersiseLogRepository>();
 
 //services

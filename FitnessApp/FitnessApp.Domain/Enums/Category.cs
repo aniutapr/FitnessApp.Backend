@@ -1,5 +1,4 @@
-﻿using System;
-namespace FitnessApp.Domain.Enums;
+﻿namespace FitnessApp.Domain.Enums;
 
 public enum Category
 {

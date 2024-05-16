@@ -5,6 +5,7 @@ namespace FitnessApp.Contracts.Interfaces.Repositories;
 
 public interface IWorkoutRepository
 {
+    public Workout CloneWorkout(Workout workout);
     Task<Workout> AddWorkoutAsync(Workout workout);
 
     Task<Workout> GetWorkoutByIdAsync(Guid id);

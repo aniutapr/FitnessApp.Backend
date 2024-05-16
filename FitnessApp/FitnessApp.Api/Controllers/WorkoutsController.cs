@@ -1,6 +1,7 @@
 ﻿using FitnessApp.Application;
 using FitnessApp.Application.Commands.Workouts;
 using FitnessApp.Application.Queries.Workouts;
+using FitnessApp.Contracts.Interfaces.Repositories;
 using FitnessApp.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -12,12 +13,25 @@ namespace FitnessApp.Api.Controllers;
 public class WorkoutsController : ControllerBase
 {
     private readonly IMediator _mediator;
+    private readonly IWorkoutRepository _workoutRepository;
 
-    public WorkoutsController(IMediator mediator)
+    public WorkoutsController(IMediator mediator, IWorkoutRepository workoutRepository)
     {
         _mediator = mediator;
+        _workoutRepository = workoutRepository;
     }
+    [HttpPost("{id}/clone")]
+    public async Task<ActionResult<WorkoutDto>> CloneWorkout(Guid id)
+    {
+        var command = new CloneWorkoutCommand { WorkoutId = id };
+        var clonedWorkout = await _mediator.Send(command);
 
+        if (clonedWorkout == null)
+        {
+            return NotFound(); 
+        }
+
+        return clonedWorkout;    }
     [HttpGet]
     public async Task<ActionResult<IEnumerable<WorkoutDto>>> GetAllWorkoutsByUserId()
     {

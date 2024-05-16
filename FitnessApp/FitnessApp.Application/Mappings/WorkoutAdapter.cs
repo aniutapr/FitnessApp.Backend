@@ -2,11 +2,11 @@
 
 namespace FitnessApp.Application
 {
-    public static class WorkoutMapper
+    public static class WorkoutAdapter
     {
         public static WorkoutDto ToDto(this Workout workout)
         {
-            var logExcersiseDtos = workout.Excersises.Select(e => LogExcersiseMapper.ToDto(e)).ToList();
+            var logExcersiseDtos = workout.Exercises.Select(e => LogExcersiseAdapter.ToDto(e)).ToList();
 
             return new WorkoutDto
             {
@@ -20,7 +20,7 @@ namespace FitnessApp.Application
 
         public static Workout ToEntity(this WorkoutDto workoutDto, Guid userId)
         {
-            var logExcersises = workoutDto.Excersises.Select(e => LogExcersiseMapper.ToEntity(e, userId)).ToList();
+            var logExcersises = workoutDto.Excersises.Select(e => LogExcersiseAdapter.ToEntity(e, userId)).ToList();
 
             return new Workout
             {
@@ -29,7 +29,7 @@ namespace FitnessApp.Application
                 DurationInMin = workoutDto.DurationInMin,
                 Stars = workoutDto.Stars,
                 HowHard = workoutDto.HowHard,
-                Excersises = logExcersises
+                Exercises = logExcersises
             };
         }
     }

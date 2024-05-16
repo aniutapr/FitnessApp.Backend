@@ -5,7 +5,6 @@ using FitnessApp.Application.Excersises.Queries;
 using FitnessApp.Application.Queries.Excersises;
 using FitnessApp.Domain.Entities;
 using MediatR;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FitnessApp.Api.Controllers;

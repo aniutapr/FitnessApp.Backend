@@ -41,9 +41,20 @@ namespace FitnessApp.Infrastructure.Persistence.Repositories
 
         public async Task<LogExcersise> LogExcersiseAsync(LogExcersise logExcersise)
         {
-            _context.LogExcersises.Add(logExcersise);
+            var logExercise = new LogExerciseBuilder()
+                .WithWorkoutId(logExcersise.WorkoutId)
+                .WithExerciseId(logExcersise.ExcersiseId)
+                .WithDuration(logExcersise.DurationInMin)
+                .WithWeight(logExcersise.Weight)
+                .WithRepeats(logExcersise.Repeats)
+                .WithSets(logExcersise.Sets)
+                .Build();
+
+            _context.LogExcersises.Add(logExercise);
             await _context.SaveChangesAsync();
-            return logExcersise;
+
+            return logExercise;
         }
+
     }
 }
