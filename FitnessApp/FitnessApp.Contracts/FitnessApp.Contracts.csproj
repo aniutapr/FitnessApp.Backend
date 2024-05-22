@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Interfaces\" />
+    <None Remove="Interfaces\Repositories\" />
+    <None Remove="Interfaces\Services\" />
+    <None Remove="Interfaces\Services\Authentication\" />
+    <None Remove="Interfaces\Services\Validation\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Interfaces\Repositories\" />
+    <Folder Include="Interfaces\Services\" />
+    <Folder Include="Interfaces\Services\Authentication\" />
+    <Folder Include="Interfaces\Services\Validation\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FitnessApp.Domain\FitnessApp.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.IO" Version="4.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+  </ItemGroup>
+</Project>

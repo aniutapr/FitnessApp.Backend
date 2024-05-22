@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/XUPzmpKg0XUI02LGzyTr8WY1H2BarOhr9kTHZKCTg8pYYhHwEjqrCVsMl6V0LezeIlEbn2NZ1Wg0bgLxT4hSg==",
+  "success": true,
+  "projectFilePath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/FitnessApp.Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/anaprodan/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

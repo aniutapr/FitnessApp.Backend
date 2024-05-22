@@ -1,0 +1,15 @@
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/bin/Debug/net7.0/FitnessApp.Contracts.deps.json
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/bin/Debug/net7.0/FitnessApp.Contracts.dll
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/bin/Debug/net7.0/FitnessApp.Contracts.pdb
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/bin/Debug/net7.0/FitnessApp.Domain.dll
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/bin/Debug/net7.0/FitnessApp.Domain.pdb
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/obj/Debug/net7.0/FitnessApp.Contracts.csproj.AssemblyReference.cache
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/obj/Debug/net7.0/FitnessApp.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/obj/Debug/net7.0/FitnessApp.Contracts.AssemblyInfoInputs.cache
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/obj/Debug/net7.0/FitnessApp.Contracts.AssemblyInfo.cs
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/obj/Debug/net7.0/FitnessApp.Contracts.csproj.CoreCompileInputs.cache
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/obj/Debug/net7.0/FitnessApp.Contracts.dll
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/obj/Debug/net7.0/refint/FitnessApp.Contracts.dll
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/obj/Debug/net7.0/FitnessApp.Contracts.pdb
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/obj/Debug/net7.0/ref/FitnessApp.Contracts.dll
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/obj/Debug/net7.0/FitnessApp.Contracts.csproj.CopyComplete

@@ -1,0 +1,17 @@
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/bin/Debug/net7.0/FitnessApp.Application.deps.json
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/bin/Debug/net7.0/FitnessApp.Application.dll
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/bin/Debug/net7.0/FitnessApp.Application.pdb
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/bin/Debug/net7.0/FitnessApp.Contracts.dll
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/bin/Debug/net7.0/FitnessApp.Domain.dll
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/bin/Debug/net7.0/FitnessApp.Contracts.pdb
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/bin/Debug/net7.0/FitnessApp.Domain.pdb
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/obj/Debug/net7.0/FitnessApp.Application.csproj.AssemblyReference.cache
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/obj/Debug/net7.0/FitnessApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/obj/Debug/net7.0/FitnessApp.Application.AssemblyInfoInputs.cache
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/obj/Debug/net7.0/FitnessApp.Application.AssemblyInfo.cs
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/obj/Debug/net7.0/FitnessApp.Application.csproj.CoreCompileInputs.cache
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/obj/Debug/net7.0/FitnessApp.Application.dll
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/obj/Debug/net7.0/refint/FitnessApp.Application.dll
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/obj/Debug/net7.0/FitnessApp.Application.pdb
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/obj/Debug/net7.0/ref/FitnessApp.Application.dll
+/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/obj/Debug/net7.0/FitnessApp.Application.csproj.CopyComplete

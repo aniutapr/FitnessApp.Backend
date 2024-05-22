@@ -1,0 +1,369 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/FitnessApp.Api.csproj": {}
+  },
+  "projects": {
+    "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/FitnessApp.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/FitnessApp.Api.csproj",
+        "projectName": "FitnessApp.Api",
+        "projectPath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/FitnessApp.Api.csproj",
+        "packagesPath": "/Users/anaprodan/.nuget/packages/",
+        "outputPath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/anaprodan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "/usr/local/share/dotnet/sdk/7.0.315/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/FitnessApp.Application.csproj": {
+                "projectPath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/FitnessApp.Application.csproj"
+              },
+              "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Infrastructure/FitnessApp.Infrastructure.csproj": {
+                "projectPath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Infrastructure/FitnessApp.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.17, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.315/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/FitnessApp.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/FitnessApp.Application.csproj",
+        "projectName": "FitnessApp.Application",
+        "projectPath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/FitnessApp.Application.csproj",
+        "packagesPath": "/Users/anaprodan/.nuget/packages/",
+        "outputPath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/anaprodan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/FitnessApp.Contracts.csproj": {
+                "projectPath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/FitnessApp.Contracts.csproj"
+              },
+              "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/FitnessApp.Domain.csproj": {
+                "projectPath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/FitnessApp.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.315/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/FitnessApp.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/FitnessApp.Contracts.csproj",
+        "projectName": "FitnessApp.Contracts",
+        "projectPath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/FitnessApp.Contracts.csproj",
+        "packagesPath": "/Users/anaprodan/.nuget/packages/",
+        "outputPath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/anaprodan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/FitnessApp.Domain.csproj": {
+                "projectPath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/FitnessApp.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "System.IO": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.315/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/FitnessApp.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/FitnessApp.Domain.csproj",
+        "projectName": "FitnessApp.Domain",
+        "projectPath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/FitnessApp.Domain.csproj",
+        "packagesPath": "/Users/anaprodan/.nuget/packages/",
+        "outputPath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/anaprodan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.315/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Infrastructure/FitnessApp.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Infrastructure/FitnessApp.Infrastructure.csproj",
+        "projectName": "FitnessApp.Infrastructure",
+        "projectPath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Infrastructure/FitnessApp.Infrastructure.csproj",
+        "packagesPath": "/Users/anaprodan/.nuget/packages/",
+        "outputPath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/anaprodan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/FitnessApp.Contracts.csproj": {
+                "projectPath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Contracts/FitnessApp.Contracts.csproj"
+              },
+              "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/FitnessApp.Domain.csproj": {
+                "projectPath": "/Users/anaprodan/Documents/GitHub/FitnessApp.Backend/FitnessApp/FitnessApp.Domain/FitnessApp.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.17, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.315/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
